@@ -1,11 +1,18 @@
+""""
+Name(s): Darren
+Name of Project: FlotSam
 """
-Name(s):
-Name of Project:
-"""
-
-#Write the main part of your program here. Use of the other pages is optional.
-
-#import page1  # uncomment if you're using page1
-#import page2  # uncomment if you're using page2
-#import page3  # uncomment if you're using page3
-#import page4  # uncomment if you're using page4
+import pygame
+import sys
+pygame.init()
+width, height = 500, 500
+background = 0,  0,  0
+screen = pygame.display.set_mode((width, height))
+sam = pygame.image.load("boy.png")
+samRect = sam.get_rect()
+print("NOTE: THERE WERE A LOT OF THINGS I COULDN'T PUT INTO THIS PROJECT THAT I WANTED TO. FOR INSTANCE, THE PROGRAM WOULD NOT LET ME ADD A GIF, SO I WASN'T ABLE TO DISPLAY ALL THE FRAMES I WANTED AND THE CHARACTER IS JUST A STILL PICTURE. SORRY FOR THE LACKLUSTER GAME.")
+while True: 
+  screen.fill(background)
+  screen.blit(sam, samRect)
+  pygame.display.flip()
+  import page1
